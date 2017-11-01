@@ -15,30 +15,31 @@
 get_header(); ?>
 
 	<div id="primary" class="home-page hero-content">
+		<div class="main-content" role="main">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php the_content(); ?>
+					<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
+			<?php endwhile; // end of the loop. ?>
+		</div><!-- .main-content -->
+	</div><!-- #primary -->
 
 <section class="recent-posts">
  <div class="site-content">
   <div class="blog-post">
 		<h4>From the Blog</h4>
-		<?php query_posts('posts_per_page=1'); ?>
+			<?php query_posts('posts_per_page=1'); ?>
+			<!--the loop -->
 		<?php while ( have_posts() ) : the_post(); ?>
 			<h3><?php the_title(); ?></h3>
-       <?php the_excerpt(); ?> 
-	 // loop content here
- <?php endwhile; ?>
-<?php wp_reset_query(); ?>
+       <?php the_excerpt(); ?>
+ <?php endwhile; ?> <!--end loop-->
+<?php wp_reset_query(); ?> <!--resets altered query back to the original -->
 
   </div>
  </div>
 </section>
 
-		<div class="main-content" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
-			<?php endwhile; // end of the loop. ?>
-		</div><!-- .main-content -->
-	</div><!-- #primary -->
+
 
 
 <?php get_footer(); ?>
