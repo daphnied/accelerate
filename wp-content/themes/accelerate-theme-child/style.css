@@ -52,6 +52,24 @@ masthead nav ul li {
 	text-transform: uppercase;
 }
 
+ul.homepage-featured-work {
+	list-style-type: none:
+	width: 100%;
+}
+
+.individual-featured-work {
+	display: block;
+	float: left;
+	padding-left: 10px;
+  width: 20%;
+}
+
+.featured-work .site-content{
+	display: block;
+}
+
+
+
 /* Case Studies */
 
 h5 {
@@ -65,15 +83,29 @@ article.case-study{
 aside.case-study-sidebar {
   float: left;
   width: 315px;
-  margin: 0 40px 0 0;
+
 
 }
 div.case-study-images {
-  float: right;
+  float: left;
   width: 600px;
+
 
 }
 div.case-study-images img{
   margin-bottom: 40px;
   border: 1px solid #dddddd;
+  display: block;
+
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.individual-featured-work{
+  display: inline;
+  margin: 25px;
+
 }
