@@ -97,12 +97,13 @@ div.case-study-images {
   float: left;
   width: 600px;
 
-
 }
 div.case-study-images img{
   margin-bottom: 40px;
   border: 1px solid #dddddd;
   display: block;
+  width: 100%;
+  height: auto;
 
 }
 
