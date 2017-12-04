@@ -21,6 +21,8 @@ get_header(); ?>
 			$size = "full";
       $services = get_field('services');
 
+?> 
+
   <article class="case-study">
     <aside class="case-study-sidebar">
       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
