@@ -117,3 +117,18 @@ ul {
   margin: 50px;
 
 }
+.menu-item i._mi {
+  text-align: center;
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.2em;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display:inline-grid;
+}
+li.menu-item{
+  text-align: center;
+  
+}
